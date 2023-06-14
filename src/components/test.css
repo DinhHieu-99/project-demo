@@ -1,0 +1,52 @@
+.dark{
+    color: white;
+    background-color: black;
+    transition: all 1s;
+}
+
+.light{
+    transition: all 1s;
+}
+
+.content .sun,.moon{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.content .sun,.moon{
+    border-radius: 50%;
+}
+
+.content .sun svg{
+    color: orange;
+    font-size: 2rem;
+   
+}
+
+.content .moon svg{
+    color: yellow;
+    font-size: 2rem;
+
+}
+
+.content .sun:hover{
+    transition: all 1s;
+    box-shadow: 0 0 10px orange, 0 0 30px orange, 0 0 60px orange, 0 0 100px orange;
+    background-color: orange;
+    color: white;
+}
+
+.content .moon:hover{
+    transition: all 1s;
+    box-shadow: 0 0 10px yellow, 0 0 30px yellow, 0 0 60px yellow, 0 0 100px yellow;
+    background-color: yellow;
+    
+}
+
+.content .sun:hover svg{
+    color: white;
+}
+.content .moon:hover svg{
+    color: white;
+}

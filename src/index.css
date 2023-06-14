@@ -1,0 +1,11 @@
+.content{
+    position: absolute;
+    left: 10%;
+    top: 10%;
+}
+.call-api{
+    margin-top: 50px;
+}
+div, a, h1, h2, h3, span, p{
+    color: white;
+}

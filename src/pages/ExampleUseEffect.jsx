@@ -28,7 +28,7 @@ const ExampleUseEffect = () => {
   //đổi màu bg
   useEffect(()=>{
     const handleScroll = () =>{
-      if (window.scrollY >= 200) {
+      if (window.scrollY >= 100) {
           document.body.style.backgroundColor = "#3bc2d1"
       }else{
         document.body.style.backgroundColor = "#0e1538"

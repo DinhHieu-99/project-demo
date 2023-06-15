@@ -1,9 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useContext } from 'react'
 import { ThemeContext } from '../pages/ExampleUseContext'
+import { memo } from 'react'
 
-const Content = () => {
+const Content = ({onIncrease}) => {
     const src = useContext(ThemeContext)
+    console.log('re-render')
   return (
     <div>
         <div>
@@ -15,8 +17,12 @@ const Content = () => {
            re-renders components that read some context if it changes.
         </div>
         <img src={src} alt="" />
+        <br />
+        <h1>Phần này là của useCallback</h1>
+        <h2>Nếu nhấn Click Me mà log ra hơn 1 dòng re-render bên component Content thì chưa sử dụng useCallback</h2>
+        <button onClick={onIncrease}>Click Me</button>
     </div>
   )
 }
 
-export default Content
+export default memo(Content)
